@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <h1  font-family:Comic sans MS;>The First Form</h1>
+            <!--Single-line text input controls-->
+            First Name : <input type="text" name="first_name" size="35" maxlength="20"/>
+            Last Name : <input type="text" name="last_name" size="35"/>
+            <br>
+            <br>
+            <!--Password input controls-->
+            User ID : <input type="text"name="user_id"/>
+            <br>
+            <br>
+            Password : <input type="password" name="password"/>
+            <br>
+            <!--Multiple-Line Text Input Controls-->
+            Description : <br>
+            <textarea rows="5" cols="50" name="description">Enter description here...</textarea>
+            <br>
+            <!--Checkbox Control-->
+            <input type="checkbox" name="agree" value="on">agree
+            <input type="checkbox" name="disagree" value="on">disagree
+            <br>
+            <!--Radio Button Control-->
+            <input type="radio" name="subject" value="maths">maths
+            <input type="radio" name="subject" value="physics">physics      
+            <br>
+            <!--Select Box Control-->
+            <select name="dropdown">
+                <option value="Maths"selected>Maths</option>
+                <option value="Physics">Physics</option>
+            </select>
+            <br> 
+            <!--File Upload Box-->
+            <input type="file" name="fileupload" accept="image/*"/>
+            <br>
+            <!--Button Controls-->
+            <input type="button" name="ok"value="OK"/>
+            <input type="submit" name="submit" value="Submit"/>
+            <input type="reset" name="reset" value="Reset"/>
+            <input type="image" name="imagebutton" src="test.png"/>
+            <!--Hidden Form Controls-->
+            <br>
+            <p>This is page 10</p>
+            <input type="hidden" name="pagename" value="10"/>
+            <input type="submit" name="submit" value="submit"/>
+        </form>
+    </body>
+</html>
